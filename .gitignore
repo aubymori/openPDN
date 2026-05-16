@@ -1,0 +1,5 @@
+bin/
+obj/
+Release/
+Debug/
+!src/SharpZipLib/bin/
