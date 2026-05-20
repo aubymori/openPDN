@@ -11,14 +11,14 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("Paint.NET Effects")]
+[assembly: AssemblyTitle("openPDN Effects")]
 [assembly: AssemblyDescription("Image and photo editing software written in C#.")]
-[assembly: AssemblyCompany("dotPDN LLC")]
-[assembly: AssemblyProduct("Paint.NET")]
-[assembly: AssemblyCopyright("Copyright © 2008 dotPDN LLC, Rick Brewster, Tom Jackson, and past contributors. Portions Copyright © Microsoft Corporation. All Rights Reserved.")]
+[assembly: AssemblyCompany("aubymori")]
+[assembly: AssemblyProduct("openPDN")]
+[assembly: AssemblyCopyright("Copyright Â© 2008-2026 aubymori, dotPDN LLC, Rick Brewster, Tom Jackson, and past contributors. Portions Copyright Â© Microsoft Corporation. All Rights Reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-[assembly: AssemblyVersion("3.36.*")]
+[assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyDelaySign(false)]
 [assembly: AssemblyKeyFile("")]
 [assembly: StringFreezing()]

@@ -104,8 +104,8 @@ namespace PdnRepair
             RegistryKey key = null;
             if (success)
             {
-                Console.Write(@"* Opening registry key, HKEY_LOCAL_MACHINE\SOFTWARE\Paint.NET: ");
-                key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Paint.NET", false);
+                Console.Write(@"* Opening registry key, HKEY_LOCAL_MACHINE\SOFTWARE\openPDN: ");
+                key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\openPDN", false);
 
                 if (key != null)
                 {

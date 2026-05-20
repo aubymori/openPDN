@@ -444,7 +444,7 @@ namespace PaintDotNet
                         "ICSharpCode.SharpZipLib.dll",
                         "PaintDotNet.Data.dll",
                         "PaintDotNet.Effects.dll",
-                        "PaintDotNet.exe",
+                        "openPDN.exe",
                         "PaintDotNet.Resources.dll",
                         "PaintDotNet.StylusReader.dll",
                         "PaintDotNet.SystemLayer.dll",
@@ -525,7 +525,7 @@ namespace PaintDotNet
                 string programsShortcutDir = Path.Combine(programsDir, programsShortcutGroup);
                 string programsLinkPath = Path.Combine(programsShortcutDir, linkName) + ".lnk";
                 string workingDirectory = PdnInfo.GetApplicationDir();
-                string targetPath = Path.Combine(workingDirectory, "PaintDotNet.exe");
+                string targetPath = Path.Combine(workingDirectory, "openPDN.exe");
 
                 // Desktop shortcut
                 if ((delete && !skipCleanup) || (!createDesktopShortcut && skipCleanup))
@@ -551,7 +551,7 @@ namespace PaintDotNet
                 
                 // Programs shortcut
                 const string programsShortcutPathKey = "ProgramsShortcutPath";
-                const string pdnKey = @"SOFTWARE\Paint.NET";
+                const string pdnKey = @"SOFTWARE\openPDN";
                     
                 if (delete && !skipCleanup)
                 {

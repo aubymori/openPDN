@@ -74,7 +74,7 @@ namespace PaintDotNet.SystemLayer
                         "directory after logging in with a user that has administrator privilege." + Environment.NewLine + 
                         Environment.NewLine + 
                         "The missing files are: " + missingFilesSB.ToString(),
-                        "Paint.NET",
+                        "openPDN",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
 
@@ -84,7 +84,7 @@ namespace PaintDotNet.SystemLayer
                 const int hMargin = 8;
                 const int vMargin = 8;
                 Form form = new Form();
-                form.Text = "Paint.NET";
+                form.Text = "openPDN";
                 form.ClientSize = new Size(400, 10);
                 form.StartPosition = FormStartPosition.CenterScreen;
 

@@ -33,7 +33,7 @@ namespace PaintDotNet.Setup
         : System.Windows.Forms.Form
     {
         private const string mutexName = "Paint.NET.SetupWizard";
-        private const string regSubKey = @"SOFTWARE\Paint.NET";
+        private const string regSubKey = @"SOFTWARE\openPDN";
 
         private Button nextButton;
         private Button backButton;

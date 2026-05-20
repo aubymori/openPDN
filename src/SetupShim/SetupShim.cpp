@@ -19,17 +19,17 @@ const TCHAR *g_szNetfx20RegKeyName = _T("Software\\Microsoft\\NET Framework Setu
 const TCHAR *g_szNetfxRegValueName = _T("Install");
 const TCHAR *g_szNetfxSPxRegValueName = _T("SP");
 
-const TCHAR *g_szMessageBoxTitle = _T("Paint.NET");
+const TCHAR *g_szMessageBoxTitle = _T("openPDN");
 
 const TCHAR *g_szNetfx20FoundText = 
     _T("[English] Paint.NET must first install the .NET Framework 2.0. On some systems this may take 5-10 minutes, during which it is safe to use your computer for other tasks.\n"
        "\n"
-       "[Deutsch] Vor Paint.NET muss zuerst das .NET Framework 2.0 installiert werden. Auf einigen Systemen kann dies 5-10 Minuten dauern. Sie können in dieser Zeit den Computer problemlos weiterverwenden.");
+       "[Deutsch] Vor Paint.NET muss zuerst das .NET Framework 2.0 installiert werden. Auf einigen Systemen kann dies 5-10 Minuten dauern. Sie kï¿½nnen in dieser Zeit den Computer problemlos weiterverwenden.");
 
 const TCHAR *g_szNetfx20NotFoundText = 
     _T("[English] Paint.NET requires that the .NET Framework 2.0 is installed. Click OK to go to Microsoft's webpage where you may download and install this.\n"
        "\n"
-       "[Deutsch] Paint.NET setzt die Installation des .NET Frameworks 2.0 voraus. Klicken sie auf OK um die Microsoft Homepage zu öffnen und das Framework zu downloaden.");
+       "[Deutsch] Paint.NET setzt die Installation des .NET Frameworks 2.0 voraus. Klicken sie auf OK um die Microsoft Homepage zu ï¿½ffnen und das Framework zu downloaden.");
 
 const TCHAR *g_szNetfxInstallFailureTextFormat =
     _T("[English] Installation of the .NET Framework failed with the following error code: %d\n"
@@ -42,7 +42,7 @@ const TCHAR *g_szNetfxInstallFailureTextFormat =
 const TCHAR *g_szNetfxInstallRebootRequired =
     _T("[English] You must now manually restart your computer before continuing with the installation of Paint.NET.\n"
        "\n"
-       "[Deutsch] Sie müssen ihren Computer nun neu starten bevor sie mit der Installation von Paint.NET fortfahren können.");
+       "[Deutsch] Sie mï¿½ssen ihren Computer nun neu starten bevor sie mit der Installation von Paint.NET fortfahren kï¿½nnen.");
 
 const TCHAR *g_szNetfx20x86DownloadUrl = _T("http://www.microsoft.com/downloads/details.aspx?FamilyID=0856eacb-4362-4b0d-8edd-aab15c5e04f5");
 const TCHAR *g_szNetfx20x64DownloadUrl = _T("http://www.microsoft.com/downloads/details.aspx?FamilyID=b44a0000-acf8-4fa1-affb-40e78d788b00");

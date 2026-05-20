@@ -1,7 +1,7 @@
 ﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
   <PropertyGroup>
     <ProjectType>Local</ProjectType>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{34920450-488E-41DF-8565-AA22C2A56902}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ApplicationIcon>Resources\icons\PaintDotNet.ico</ApplicationIcon>
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
-    <AssemblyName>PaintDotNet</AssemblyName>
+    <AssemblyName>openPDN</AssemblyName>
     <AssemblyOriginatorKeyFile>
     </AssemblyOriginatorKeyFile>
     <DefaultClientScript>JScript</DefaultClientScript>
@@ -621,9 +621,6 @@ copy "$(SolutionDir)\WiaProxy32\bin\$(ConfigurationName)\WiaProxy32.exe" "$(Targ
 
 @rem copy English strings over
 copy "$(SolutionDir)\Strings\$(ConfigurationName)\PaintDotNet.Strings.3.resources" "$(TargetDir)"
-
-@rem copy non-English strings (we won't copy the other file/image resource overrides)
-copy "$(SolutionDir)\Resources.mui\*.resources" "$(TargetDir)"
 
 :done
 rem call "$(ProjectDir)prejit.bat" "$(TargetPath)"</PostBuildEvent>

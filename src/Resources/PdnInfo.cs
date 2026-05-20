@@ -236,7 +236,7 @@ namespace PaintDotNet
         }
 
         /// <summary>
-        /// Returns the bare product name, e.g. "Paint.NET"
+        /// Returns the bare product name, e.g. "openPDN"
         /// </summary>
         public static string GetBareProductName()
         {

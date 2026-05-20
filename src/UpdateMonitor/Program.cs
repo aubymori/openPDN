@@ -99,7 +99,7 @@ namespace PaintDotNet
             // Retrieve paint.net's location from the registry
             Console.Write(@"Retrieving install directory from registry, HKLM \ Software \ Paint.NET \ TARGETDIR ... ");
 
-            const string subKeyName = @"SOFTWARE\Paint.NET";
+            const string subKeyName = @"SOFTWARE\openPDN";
             RegistryKey key = Registry.LocalMachine.OpenSubKey(subKeyName, false);
 
             if (key == null)

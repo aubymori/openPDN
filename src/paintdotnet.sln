@@ -103,11 +103,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdnRepair", "PdnRepair\PdnR
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdateMonitor", "UpdateMonitor\UpdateMonitor.csproj", "{D1E5865F-9DC5-4504-A484-5CE8A8A79621}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources.mui", "Resources.mui\Resources.mui.csproj", "{5ED3F986-A73E-44C5-AC1A-BD101472CB01}"
-	ProjectSection(ProjectDependencies) = postProject
-		{6D06E18A-6A4A-49FF-BB33-2C722D051BE8} = {6D06E18A-6A4A-49FF-BB33-2C722D051BE8}
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base", "Base\Base.csproj", "{05C4C721-F8E3-42E1-B817-9D165DA1A9FB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Squish_x64", "DdsFileType\Squish\Squish_x64\Squish_x64.vcproj", "{EF345808-905D-4738-BC3F-0D0CB3960C4A}"

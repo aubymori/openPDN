@@ -19,7 +19,7 @@ namespace PaintDotNet
         // {0} is "All Rights Reserved"
         // Legal has advised that's the only part of this string that should be localizable.
         public const string CopyrightFormat = 
-            "Copyright � 2008 dotPDN LLC, Rick Brewster, Tom Jackson, and contributors. Portions Copyright � Microsoft Corporation. {0}";
+            "Copyright © 2008-2026 aubymori, dotPDN LLC, Rick Brewster, Tom Jackson, and contributors. Portions Copyright © Microsoft Corporation. {0}";
 
         public const string FeedbackEmail =
               "aubyomori@gmail.com";
@@ -63,6 +63,6 @@ Please e-mail this file to {0} so we can diagnose and fix the problem.
             "There was an unhandled error, and Paint.NET must be closed. Refer to the file '{0}', which has been placed on your desktop, for more information.";
 
         public const string SingleInstanceMonikerName = 
-            "aubyspdn"; // TEMPORARY
+            "openPDN";
     }
 }

@@ -40,28 +40,28 @@ InstallDir $TEMP\PdnSetup
 
 Icon ..\Resources\Icons\PaintDotNet.ico
 
-VIAddVersionKey ProductName "Paint.NET Setup"
-VIAddVersionKey ProductVersion "3.0.0.0"
-VIAddVersionKey FileVersion "3.0.0.0"
-VIAddVersionKey LegalCopyright "Copyright � 2007 Rick Brewster, Tom Jackson, and past contributors. Portions Copyright � 2007 Microsoft Corporation. All Rights Reserved."
-VIAddVersionKey FileDescription "Installs Paint.NET."
-VIProductVersion "3.0.0.0"
+VIAddVersionKey ProductName "openPDN Setup"
+VIAddVersionKey ProductVersion "1.0.0.0"
+VIAddVersionKey FileVersion "1.0.0.0"
+VIAddVersionKey LegalCopyright "Copyright © 2008-2026 aubymori, dotPDN LLC, Rick Brewster, Tom Jackson, and past contributors. Portions Copyright © Microsoft Corporation. All Rights Reserved."
+VIAddVersionKey FileDescription "Installs openPDN."
+VIProductVersion "1.0.0.0"
 
 ; The file to write
 !ifdef Debug
 
 !ifdef FullInstaller
-  OutFile "..\Setup\Debug\PaintDotNetWithDotNetSetup.exe"
+  OutFile "..\Setup\Debug\openPDNWithDotNetSetup.exe"
 !else
-  OutFile "..\Setup\Debug\PaintDotNetSetup.exe"
+  OutFile "..\Setup\Debug\openPDNSetup.exe"
 !endif
 
 !else
 
 !ifdef FullInstaller
-  OutFile "..\Setup\Release\PaintDotNetWithDotNetSetup.exe"
+  OutFile "..\Setup\Release\openPDNWithDotNetSetup.exe"
 !else
-  OutFile "..\Setup\Release\PaintDotNetSetup.exe"
+  OutFile "..\Setup\Release\openPDNSetup.exe"
 !endif 
 
 !endif
@@ -88,15 +88,11 @@ Section "" ;No components page, name is not important
   Pop $Args
   
   ; Put file there
-  File ..\Setup\Release\PaintDotNet.msi
+  File ..\Setup\Release\openPDN.msi
   File ..\SetupFrontEnd\bin\Release\PaintDotNet.Base.dll
   File ..\SetupFrontEnd\bin\Release\PaintDotNet.Core.dll
   File ..\SetupFrontEnd\bin\Release\PaintDotNet.Resources.dll
   File ..\SetupFrontEnd\bin\Release\PaintDotNet.SystemLayer.dll
-  File /nonfatal ..\Resources.mui\*.resources
-  File /nonfatal /r /x CVS ..\Resources.mui\*.rtf
-  File /nonfatal /r /x CVS ..\Resources.mui\*.png
-  File /nonfatal /r /x CVS ..\Resources.mui\*.gif
   File ..\SetupFrontEnd\bin\Release\PaintDotNet.Strings.3.resources
   File ..\SetupFrontEnd\bin\Release\SetupFrontEnd.exe
   File ..\SetupShim\Release\SetupShim.exe
@@ -126,11 +122,11 @@ Section "" ;No components page, name is not important
   Delete $INSTDIR\SetupShim.exe
   Delete $INSTDIR\SetupFrontEnd.exe
   Delete $INSTDIR\PaintDotNet.Strings.3.resources
-  Delete $INSTDIR\*.resources
+  Delete $INSTDIR\PaintDotNet.Base.dll
+  Delete $INSTDIR\PaintDotNet.Core.dll
   Delete $INSTDIR\PaintDotNet.Resources.dll
   Delete $INSTDIR\PaintDotNet.SystemLayer.dll
-  Delete $INSTDIR\PdnLib.dll
-  Delete $INSTDIR\PaintDotNet.msi
+  Delete $INSTDIR\openPDN.msi
   
   RMDir /r $INSTDIR
   

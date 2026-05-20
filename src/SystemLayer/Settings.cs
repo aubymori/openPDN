@@ -29,7 +29,7 @@ namespace PaintDotNet.SystemLayer
     public sealed class Settings
         : ISimpleCollection<string, string>
     {
-        private const string hkcuKey = @"SOFTWARE\Paint.NET";
+        private const string hkcuKey = @"SOFTWARE\openPDN";
 
         public static readonly Settings SystemWide = new Settings(Microsoft.Win32.Registry.LocalMachine);
         public static readonly Settings CurrentUser = new Settings(Microsoft.Win32.Registry.CurrentUser);

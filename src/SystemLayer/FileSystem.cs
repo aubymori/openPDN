@@ -464,7 +464,7 @@ namespace PaintDotNet.SystemLayer
         {
             // Determine root path of where we store our persisted data
             string localSettingsDir = Shell.GetVirtualPath(VirtualFolderName.UserLocalAppData, true);
-            string tempDirRoot = Path.Combine(localSettingsDir, "Paint.NET");
+            string tempDirRoot = Path.Combine(localSettingsDir, "openPDN");
 
             DirectoryInfo tempDirRootInfo = new DirectoryInfo(tempDirRoot);
 

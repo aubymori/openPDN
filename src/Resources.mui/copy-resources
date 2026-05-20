@@ -1,2 +1,0 @@
-#!/bin/sh
-cp PaintDotNet.Strings.3.*.resources ../bin/Debug
