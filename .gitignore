@@ -3,3 +3,4 @@ obj/
 Release/
 Debug/
 !src/SharpZipLib/bin/
+*.user
